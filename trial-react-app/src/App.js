@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+
 import './index.css';
 
-import firstImage from './assets/images/outline-b.png';
-
 function App() {
+  const [toggle, setToggle] = useState();
   return (
 
-    <div className="bg-green-600">
-      <div>
-        <img src={firstImage} />
-        <div>
-          <h1>fuck this</h1>
+    <div className="h-screen bg-black" >
+      <div className="flex justify-center items-center h-1/2 pt-48">
+        <div className="w-96">
+          <h1 className="text-center font-pStart text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-4xl animate-breathing">
+            the game.. again
+          </h1>
+          <div className="pt-6 text-center space-y-4 font-pStart text-white text-sm">
+            <h2 onClick={() => setToggle("Start")} className="cursor-pointer hover:scale-110 hover:text-gray-300">
+              Start
+            </h2>
+            <h2 className="cursor-pointer hover:scale-110 hover:text-gray-300">
+              Exit
+            </h2>
+          </div>
         </div>
 
 
       </div >
     </div>
+
   )
 }
+
 
 export default App;
