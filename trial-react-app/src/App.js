@@ -3,8 +3,8 @@ import './index.css';
 
 function App() {
 
-  const [visibility, setVisibility] = useState(false);
-  const divStyle = { display: visibility }
+  const [visibile, setVisibility] = useState(false);
+  const divStyle = { display: visibile }
 
   const handleClick = event => {
     setVisibility(current => !current);
@@ -17,7 +17,7 @@ function App() {
     <div className="h-screen bg-black">
       <div style={divStyle} className="flex justify-center items-center h-1/2 pt-48">
         <div className="w-96">
-          <h1 className="text-center font-pStart text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-4xl animate-breathing">
+          <h1 className="text-center font-pStart text-red-600 text-4xl animate-shake">
             the game.. again
           </h1>
           <div className="pt-6 text-center space-y-4 font-pStart text-white text-sm">
@@ -31,11 +31,10 @@ function App() {
         </div>
       </div>
 
-      {visibility && (
+      {visibile && (
         <div className="flex justify-center items-center h-1/2 pt-48">
           <div className="w-96">
-
-            <h1 className="text-center font-pStart text-white">
+            <h1 className="overflow-hidden whitespace-nowrap m-auto animate-typing text-center font-pStart text-white">
               Are you ready?
             </h1>
 

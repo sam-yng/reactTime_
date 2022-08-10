@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 @font-face {
+    font-family: 'sStoke';
+    src: url("assets/fonts/Stoke-Regular.ttf");
+}
+
+@font-face {
     font-family: 'pStart';
     src: url("assets/fonts/PressStart2P-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'inknut';
+    src: url("assets/fonts/InknutAntiqua-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'cCorm';
+    src: url("assets/fonts/CormorantGaramond-Regular.ttf");
 }
